@@ -1,0 +1,35 @@
+{
+  "name": "ajaia-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ajaia Docs - a lightweight collaborative document editor",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:seed": "node prisma/seed.js",
+    "setup": "npm install && prisma generate && prisma db push && node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "@tiptap/extension-placeholder": "^2.5.9",
+    "@tiptap/extension-underline": "^2.5.9",
+    "@tiptap/react": "^2.5.9",
+    "@tiptap/starter-kit": "^2.5.9",
+    "next": "14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.15.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
